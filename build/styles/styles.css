@@ -1,3 +1,8 @@
+.header__content {
+  color: white;
+  z-index: 9;
+  position: relative; }
+
 .workspace {
   position: relative;
   height: 100vh; }
@@ -31,7 +36,7 @@
   background-color: #210a34;
   opacity: 0; }
 
-.layer {
+.workspace__layer {
   transition: opacity 0.5s ease-out, -webkit-transform 0.5s;
   transition: opacity 0.5s ease-out, transform 0.5s;
   transition: opacity 0.5s ease-out, transform 0.5s, -webkit-transform 0.5s;
@@ -41,12 +46,12 @@
   transform: translateX(-10%);
   position: absolute; }
 
-.layer--0 {
+.workspace__layer--0 {
   background: url("../images/lay0.png") no-repeat;
   background-size: cover;
   background-position: center; }
 
-.layer--0:before {
+.workspace__layer--0:before {
   content: " ";
   position: absolute;
   background: #ffffff;
@@ -59,31 +64,28 @@
   left: 15%;
   z-index: 0; }
 
-.layer--1 {
+.workspace__layer--1 {
   background: url("../images/lay1.svg") no-repeat;
   background-size: cover;
   background-position: center; }
 
-.layer--2 {
+.workspace__layer--2 {
   background: url("../images/lay2.svg") no-repeat;
   background-size: cover;
   background-position: center; }
 
-.layer--3 {
+.workspace__layer--3 {
   background: url("../images/lay3.svg") no-repeat;
   background-size: cover;
   background-position: center; }
 
-.layer--4 {
+.workspace__layer--4 {
   background: url("../images/lay4.svg") no-repeat;
   background-size: cover;
   background-position: center; }
 
-.layer--5 {
+.workspace__layer--5 {
   background: url("../images/lay5.svg") no-repeat;
   background-size: cover;
   background-position: center; }
-
-p {
-  z-index: 3; }
 
