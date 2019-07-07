@@ -1,5 +1,71 @@
-.header__content {
-    color: white;
-    z-index: 9;
-    position: relative;
+@import "./normalize.scss";
+@import "./fonts.scss";
+@import "./colors.scss";
+@import "./breakpoints.scss";
+@import "./container.scss";
+@import "./button.scss";
+@import "./icons.scss";
+@import "./mixins-variables.scss";
+@import "./hamburger.scss";
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+  // font-size: 0;
 }
+
+.main-nav__logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo__link {
+  display: inline-block;
+}
+
+.logo__img {
+  display: block;
+  height: 70px;
+}
+
+.social {
+  display: inline-block;
+  padding: 0;
+}
+
+.header {
+  padding-top: 70px;
+}
+
+.main-nav__list {
+  display: inline-block;
+}
+
+.main-nav__item {
+  display: inline-block;
+}
+
+.main-nav__link {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font: 2rem $openSans;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social__link {
+  display: block;
+}
+
+// p {
+//     color: #fbfbfa;
+//     color: #173661;
+//     color: #03b5a5;
+// }

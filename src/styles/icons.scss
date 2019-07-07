@@ -1,0 +1,28 @@
+$social-icon-width: 32px;
+$social-icon-height: 32px;
+
+.social__icon {
+  display: block;
+  border: none;
+  margin: 0 auto;
+  text-indent: -9000px;
+  width: $social-icon-width;
+  height: $social-icon-height;
+
+  &--facebook {
+    background: url("../images/icons/social_icons.svg");
+    background-size: auto 100%;
+  }
+
+  &--github {
+    background: url("../images/icons/social_icons.svg");
+    background-size: auto 100%;
+    background-position: calc(#{$social-icon-width} + #{$social-icon-width}) 0;
+  }
+ 
+  &--linkedin {
+    background: url("../images/icons/social_icons.svg");
+    background-size: auto 100%;
+    background-position: $social-icon-width 0;
+  }
+}

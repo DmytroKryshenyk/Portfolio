@@ -10,11 +10,66 @@
     <!-- <link rel="stylesheet" href="./styles/styles.scss" /> -->
   </head>
   <body>
-    <header class="header workspace js-workspace">
-      <section class="header__content">
-          Header --- Тут буде контент
-      </section>
+    <nav class="main-nav container">
+      <h1 class="main-nav__logo logo">
+        <a href="#" class="logo__link" title="logo link to root page">
+          <img src="./images/logo.svg" class="logo__img" alt="logo link image " />
+        </a>
+      </h1>      
       
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#about" class="main-nav__link" title="link to about section">About</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#skills" class="main-nav__link" title="link to skills section">Skills</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#projects" class="main-nav__link" title="link to projects section">Projects</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#contacts" class="main-nav__link" title="link to contacts section">Contacts</a>
+        </li>
+      </ul>
+      <ul class="main-nav__social social">
+        <li class="social__item">
+          <a
+            href="https://www.facebook.com/dmytro.kryshenyk"
+            class="social__link"
+            target="_blank"
+            title="link to facebook"
+          >
+            <i class="social__icon social__icon--facebook">Facebook</i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            href="https://github.com/DmytroKryshenyk"
+            class="social__link"
+            target="_blank"
+            title="link to github"
+          >
+            <i class="social__icon social__icon--github">Github</i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            href="https://www.linkedin.com/in/dmytro-kryshenyk"
+            class="social__link"
+            target="_blank"
+            title="link to linkedin"
+          >
+            <i class="social__icon social__icon--linkedin">Linkedin</i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="header workspace js-workspace">
+      <section class="header__content container">
+        Header --- Тут буде контент
+      </section>
+
       <section class="header_workspace workspace__layers js-workspace__layers">
         <div class="workspace__layer workspace__layer--0" data-id="workspace__layer0" data-range="0"></div>
         <div class="workspace__layer workspace__layer--1" data-id="workspace__layer1" data-range="20"></div>
