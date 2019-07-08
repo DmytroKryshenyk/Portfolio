@@ -345,8 +345,8 @@ template {
 .button {
   background: none;
   color: #ffffff;
-  font: 1.3rem "OpenSansCondensed", sans-serif;
-  padding: 0.2rem 1.5rem;
+  font: 300 1.2rem "OpenSansCondensed", sans-serif;
+  padding: 0.7rem 1.3rem;
   border: 1px solid #ffffff;
   text-transform: uppercase; }
 
@@ -430,18 +430,24 @@ template {
   flex-direction: column;
   text-align: center; }
 
+.header__title,
+.header__subtitle {
+  position: relative;
+  top: -30px; }
+
 .header__title {
-  font-family: "OpenSansCondensed", sans-serif;
-  font-weight: normal;
-  margin-bottom: 8px; }
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 8px;
+  font-size: 2.1rem; }
 
 .header__subtitle {
-  font-family: "OpenSansCondensed", sans-serif;
-  font-weight: normal; }
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 1.9rem; }
 
 .header__projects-btn {
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
@@ -591,11 +597,11 @@ template {
   .main-nav__logo {
     padding: 16px 0 0 16px; } }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .header__title {
-    font-size: 1.2rem; }
+    font-size: 3.9rem; }
   .header__subtitle {
-    font-size: 1rem; } }
+    font-size: 2rem; } }
 
 @media (min-width: 992px) {
   #menu--toggle,
@@ -618,7 +624,11 @@ template {
     .main-nav__item:first-child {
       margin-left: 0; }
   .main-nav__link {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+  .header__title {
+    font-size: 4rem; }
+  .header__subtitle {
+    font-size: 2rem; } }
 
 .header__content {
   color: white;

@@ -1,3 +1,5 @@
+
+
 @media (max-width: $breakpoint-medium) {
   @import "./hamburger.scss";
 
@@ -6,15 +8,14 @@
   }
 }
 
-@media (max-width: $breakpoint-small) {
-    .header__title {
-        font-size: 1.2rem;
-         
-    }
+@media (min-width: $breakpoint-small) {
+  .header__title {
+    font-size: 3.9rem;
+  }
 
-    .header__subtitle {
-        font-size: 1rem;
-    }
+  .header__subtitle {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: $breakpoint-medium) {
@@ -49,5 +50,13 @@
 
   .main-nav__link {
     font-size: 1.3rem;
+  }
+
+  .header__title {
+    font-size: 4rem;
+  }
+
+  .header__subtitle {
+    font-size: 2rem;
   }
 }

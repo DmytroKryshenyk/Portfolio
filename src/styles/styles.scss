@@ -79,22 +79,29 @@
   text-align: center;
 }
 
+.header__title,
+.header__subtitle {
+  position: relative;
+  top: -30px;
+}
+
 .header__title {
-  font-family: $openSans;
-  font-weight: normal;
+  font-family: $roboto;
   margin-bottom: 8px;
+  font-size: 2.1rem;
 }
 
 .header__subtitle {
-  font-family: $openSans;
+  font-family: $roboto;
   font-weight: normal;
+  font-size: 1.9rem;
 }
 
 .header__projects-btn {
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
 }
 
 @import "./media.scss";
