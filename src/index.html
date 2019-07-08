@@ -13,13 +13,18 @@
     <nav class="main-nav container">
       <h1 class="main-nav__logo logo">
         <a href="#" class="logo__link" title="logo link to root page">
-          <img src="./images/logo.svg" class="logo__img" alt="logo link image " />
+          <img src="./images/logo-kd.svg" class="logo__img" alt="logo link image " />
         </a>
-      </h1>      
-      
+      </h1>
+
+      <!-- input and two label tags below are for mobile hamburger -->
+      <input id="menu--toggle" type="checkbox" />
+      <label class="menu--toggle__trigger" for="menu--toggle"></label>
+      <label class="menu--toggle__burger" for="menu--toggle"></label>
+
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="#about" class="main-nav__link" title="link to about section">About</a>
+          <a href="#about" class="main-nav__link" title="link to about section">About me</a>
         </li>
         <li class="main-nav__item">
           <a href="#skills" class="main-nav__link" title="link to skills section">Skills</a>
@@ -31,6 +36,7 @@
           <a href="#contacts" class="main-nav__link" title="link to contacts section">Contacts</a>
         </li>
       </ul>
+
       <ul class="main-nav__social social">
         <li class="social__item">
           <a
@@ -66,8 +72,10 @@
     </nav>
 
     <header class="header workspace js-workspace">
-      <section class="header__content container">
-        Header --- Тут буде контент
+      <section class="header__content">
+        <p class="header__title">Hi, I'm Front-end Developer</p>
+        <h4 class="header__subtitle">Kryshenyk Dmytro</h4>
+        <button class="button header__projects-btn">Projects</button>
       </section>
 
       <section class="header_workspace workspace__layers js-workspace__layers">
@@ -79,6 +87,19 @@
         <div class="workspace__layer workspace__layer--5" data-id="workspace__layer5" data-range="150"></div>
       </section>
     </header>
+
+    <main class="main">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, vel nulla. Deleniti architecto, illum
+        debitis nostrum eos iusto blanditiis reiciendis autem reprehenderit dolore quas! Quia tempora porro
+        vero molestias quibusdam quae atque assumenda, ut at voluptas perspiciatis natus, labore nihil beatae
+        voluptatum? Ullam, blanditiis consequuntur vitae possimus explicabo nobis vero eligendi illum? In ex,
+        nisi dolor repudiandae sequi architecto. Aliquam officia dicta, ab delectus eligendi ratione itaque!
+        Vero aliquam voluptates necessitatibus ex vel accusamus eveniet repudiandae. Exercitationem laudantium
+        eveniet in, pariatur voluptatem enim, doloremque, ipsum assumenda iusto consequatur error sed
+        veritatis voluptate quis iste provident vero et ab fugit tenetur?
+      </p>
+    </main>
     <script src="./js/index.js"></script>
   </body>
 </html>

@@ -8,10 +8,6 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- * {
-  box-sizing: content-box;
- }
-
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -28,15 +24,24 @@ body {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 /**
      * Correct the font size and margin on `h1` elements within `section` and
      * `article` contexts in Chrome, Firefox, and Safari.
      */
-
-h1 {
-  font-size: 2em;
-  margin: 0;
-}
 
 /* Grouping content
        ========================================================================== */

@@ -1,0 +1,53 @@
+@media (max-width: $breakpoint-medium) {
+  @import "./hamburger.scss";
+
+  .main-nav__logo {
+    padding: 16px 0 0 16px;
+  }
+}
+
+@media (max-width: $breakpoint-small) {
+    .header__title {
+        font-size: 1.2rem;
+         
+    }
+
+    .header__subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: $breakpoint-medium) {
+  #menu--toggle,
+  .menu--toggle__trigger,
+  .menu--toggle__burger,
+  .menu--toggle__burger:before,
+  .menu--toggle__burger:after {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .main-nav__logo {
+    padding: 0;
+  }
+
+  .main-nav__item {
+    display: inline-block;
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .main-nav__link {
+    font-size: 1.3rem;
+  }
+}

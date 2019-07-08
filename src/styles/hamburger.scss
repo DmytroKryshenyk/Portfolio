@@ -1,24 +1,11 @@
-/***************************
- *	Variables
- **************************/
-$font-family: "Open Sans", sans-serif;
-$font-size: 1em;
+// Variables
+$hamburger-long-time: 1s;
+$hamburger-long-fn: cubic-bezier(0.25, 0.1, 0.25, 1);
+$hamburger-short-time: 0.5s;
+$hamburger-short-fn: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-$color-body: #e2e2e2;
-$color-text: #282828;
-$color-menu: #fcfcfc;
-
-$variable-menu-animation-time: 1s;
-$variable-burger-animation-time: 0.35s;
-
-$variable-menu-animation-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-$variable-burger-animation-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-/***************************
-  *	Application Main Styles
-  **************************/
-#menu--toggle[type="checkbox"]:not(:checked),
-#menu--toggle[type="checkbox"]:checked {
+// Application Main Styles
+#menu--toggle {
   display: none;
 }
 
@@ -27,19 +14,19 @@ $variable-burger-animation-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 .menu--toggle__burger:before,
 .menu--toggle__burger:after {
   position: absolute;
-  top: 1.6em;
-  left: 1.6em;
-  width: 2em;
+  top: 29px;
+  right: 25px;
+  width: 32px;
   height: 5px;
-  background-color: $color-text;
+  background-color: #ffffff;
   border-radius: 2px;
   cursor: pointer;
   z-index: 100;
-  transition: $variable-burger-animation-time $variable-menu-animation-function;
+  transition: $hamburger-short-time $hamburger-long-fn;
 }
 
 .menu--toggle__trigger {
-  height: 2em;
+  height: 32px;
   background: none;
 }
 
@@ -47,109 +34,124 @@ $variable-burger-animation-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   &:before {
     content: "";
     top: 10px;
-    left: 0;
+    right: 0;
   }
   &:after {
     content: "";
     top: 20px;
-    left: 0;
+    right: 0;
   }
 }
 
-.menu__body {
+.main-nav__list {
   position: absolute;
-  width: 7em;
-  height: 7em;
+  top: 16px;
+  right: 16px;
+  width: 50px;
+  height: 50px;
   margin: 0;
   padding: 0;
-  background-color: $color-menu;
-  border-bottom-right-radius: 100%;
-  box-shadow: 3px 3px 7px rgba($color-text, 0.2);
+  background-color: rgba($brand-color-1, 0.9);
+  border-radius: 100%;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
   z-index: 10;
-  animation: checkboxUncheckedAnimation $variable-burger-animation-time both;
+  animation: closeHumburgerList $hamburger-short-time both;
 }
 
-.menu__body-element,
-.menu__body-link {
+.main-nav__item {
   display: none;
-  margin: 4.4em 0 -3.3em -0.1em;
-  font-weight: normal;
-  color: $color-text;
-  text-decoration: none;
-  text-transform: none;
-  list-style: none;
-  outline: 0;
+  opacity: 0;
 }
 
-.menu__body-element {
-  text-indent: 2em;
-}
-
-.menu__body-link:hover {
-  display: block;
-  width: 0;
-  color: $color-text;
-  background-color: $color-body;
-  animation: changeWidthOfElementAnimation $variable-burger-animation-time both;
+.main-nav__social {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  right: 0;
+  top: 40px;
+  z-index: 10;
 }
 
 #menu--toggle:checked + .menu--toggle__trigger {
   & + .menu--toggle__burger {
-    top: 35px;
+    top: 39px;
     transform: rotate(405deg);
-    transition: transform $variable-burger-animation-time $variable-burger-animation-function;
+    transition: transform $hamburger-short-time $hamburger-short-fn;
 
     &:before {
       top: 0;
       transform: rotate(-90deg);
-      transition: transform $variable-burger-animation-time $variable-burger-animation-function;
+      transition: transform $hamburger-short-time $hamburger-short-fn;
     }
     &:after {
       top: 0;
       transform: rotate(90deg);
-      transition: transform $variable-burger-animation-time $variable-burger-animation-function;
+      transition: transform $hamburger-short-time $hamburger-short-fn;
     }
   }
 
-  & + .menu--toggle__burger + .menu__body {
-    animation: checkboxCheckedAnimation $variable-menu-animation-time $variable-menu-animation-function both;
+  & ~ .main-nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: openHamburgerList $hamburger-long-time $hamburger-long-fn both;
   }
 
-  & ~ .menu__body .menu__body-element,
-  & ~ .menu__body .menu__body-link {
+  & ~ .main-nav__list .main-nav__item {
     display: block;
+    animation: openHamburgerOpacity $hamburger-short-time both;
+  }
+
+  & ~ .main-nav__social {
+    display: block;
+    animation: openHamburgerSocial $hamburger-long-time $hamburger-long-fn both,
+      openHamburgerOpacity $hamburger-short-time both;
   }
 }
 
-/**
-  *	Animations
-  *
-  *  @note checkboxCheckedAnimation - added fix for Microsoft Edge
-  */
-@keyframes checkboxCheckedAnimation {
-  50% {
-    width: 100vw;
-    height: 100vh;
+// Animations
+// p.s. @note openHamburgerList- added fix for Microsoft Edge
+@keyframes openHamburgerList {
+  20% {
+    border-top-right-radius: 0;
   }
+
   100% {
-    width: 100vw;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    right: 0;
+    top: 0;
+  }
+}
+
+@keyframes closeHumburgerList {
+  80% {
+    border-top-right-radius: 0;
+  }
+
+  0% {
+    width: 100%;
     height: 100vh;
     border-radius: 0;
   }
 }
 
-@keyframes checkboxUncheckedAnimation {
-  0% {
-    width: 100vw;
-    height: 100vh;
+@keyframes openHamburgerSocial {
+  100% {
+    right: 50%;
+    transform: translateX(50%);
   }
 }
 
-@keyframes changeWidthOfElementAnimation {
+@keyframes openHamburgerOpacity {
   50% {
-    width: 0;
+    opacity: 0.2; 
   }
+
   100% {
-    width: 100%;
+    opacity: 1;
+    display: block;
   }
 }
