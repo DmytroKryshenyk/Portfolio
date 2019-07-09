@@ -1,6 +1,6 @@
 import "./styles.scss";
 
-export default class workspaceLayers {
+export default class WorkspaceLayers {
   constructor(layer_container) {
     this.layer_container = layer_container;
     this.layers = layer_container.querySelectorAll(".workspace__layer");

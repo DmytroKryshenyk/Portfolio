@@ -2,16 +2,38 @@
 @import "./fonts.scss";
 @import "./colors.scss";
 @import "./breakpoints.scss";
-@import "./button.scss";
+@import "./variables-mixins.scss";
 @import "./icons.scss";
+@import "./button.scss";
 
 .container {
   width: 100%;
-  min-width: 320px;
-  max-width: 1200px;
+  min-width: $container-size-min;
+  max-width: $container-size-max;
   margin: auto;
-  outline: 1px solid teal;
-  padding: 0 16px;
+  padding-right: $general-padding-s;
+  padding-left: $general-padding-s;
+}
+
+.big-section--padding {
+  padding-top: $general-padding-m;
+  padding-bottom: $general-padding-l;
+}
+
+.title-line {
+  position: relative;
+  padding-bottom: 2.625rem;
+ 
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 0.125rem;
+    background-color: $brand-color-3;
+  }
 }
 
 .main-nav {
@@ -20,13 +42,12 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  min-width: 320px;
-  max-width: 1200px;
+  min-width: $container-size-min;
+  max-width: $container-size-max;
   margin: auto;
-  outline: 1px solid teal;
   z-index: 20;
+  padding-top: $main-nav-padding-s;
 }
-
 .main-nav__logo {
   display: inline-block;
   vertical-align: middle;
@@ -39,7 +60,7 @@
 
 .logo__img {
   display: block;
-  height: 50px;
+  height: 3.125rem;
 }
 
 .main-nav__item {
@@ -51,6 +72,11 @@
   color: #ffffff;
   text-decoration: none;
   font: 2rem $openSans;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: $brand-color-2;
+  }
 }
 
 .social {
@@ -63,6 +89,15 @@
 
 .social__link {
   display: block;
+}
+
+.social__icon {
+  transition: fill 0.2s linear;
+  fill: $brand-color-2;
+
+  &:hover {
+    fill: $brand-color-2;
+  }
 }
 
 .header {
@@ -82,12 +117,12 @@
 .header__title,
 .header__subtitle {
   position: relative;
-  top: -30px;
+  top: 2rem;
 }
 
 .header__title {
   font-family: $roboto;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   font-size: 2.1rem;
 }
 
@@ -99,9 +134,77 @@
 
 .header__projects-btn {
   position: absolute;
-  bottom: 50px;
+  bottom: 3.125rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.about__content {
+  margin-bottom: 3.125rem;
+}
+
+.about__header {
+}
+
+.about__title {
+  font: 500 2rem $roboto;
+  text-align: center;
+}
+
+.about__image-wrapper {
+  margin-bottom: 1.25rem;
+}
+
+.about__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.about__description {
+  font: 300 1.3rem $openSans;
+  margin-bottom: 1.25rem;
+  display: flex;
+}
+
+.about__cv-button {
+  max-width: 21rem;
+  display: block;
+  margin: auto;
+}
+
+// ===
+// ===
+// ===
+// ===
+// ===
+// ===
+// ===
+
+@keyframes mainNavShriks {
+  0% {
+    padding-top: $main-nav-padding-s;
+    padding-bottom: $main-nav-padding-s;
+  }
+
+  100% {
+    padding-top: $main-nav-padding-xs;
+    padding-bottom: 0;
+    background: $darkest-grey;
+  }
+}
+
+@keyframes mainNavExpads {
+  0% {
+    padding-top: $main-nav-padding-xs;
+    padding-bottom: 0;
+    background: $darkest-grey;
+  }
+
+  100% {
+    padding-top: $main-nav-padding-s;
+    padding-bottom: $main-nav-padding-s;
+  }
 }
 
 @import "./media.scss";

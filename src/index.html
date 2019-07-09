@@ -10,7 +10,7 @@
     <!-- <link rel="stylesheet" href="./styles/styles.scss" /> -->
   </head>
   <body>
-    <nav class="main-nav container">
+    <nav class="main-nav container js-main-nav">
       <h1 class="main-nav__logo logo">
         <a href="#" class="logo__link" title="logo link to root page">
           <img src="./images/logo-kd.svg" class="logo__img" alt="logo link image " />
@@ -75,7 +75,12 @@
       <section class="header__content">
         <p class="header__title">Hi, I'm Front-end Developer</p>
         <h4 class="header__subtitle">Kryshenyk Dmytro</h4>
-        <button class="button header__projects-btn">Projects</button>
+        <a
+          href="#portfolio"
+          class="header__projects-btn button-transparent-white"
+          alt="link button to projects"
+          >Projects
+        </a>
       </section>
 
       <section class="header_workspace workspace__layers js-workspace__layers">
@@ -89,16 +94,45 @@
     </header>
 
     <main class="main">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, vel nulla. Deleniti architecto, illum
-        debitis nostrum eos iusto blanditiis reiciendis autem reprehenderit dolore quas! Quia tempora porro
-        vero molestias quibusdam quae atque assumenda, ut at voluptas perspiciatis natus, labore nihil beatae
-        voluptatum? Ullam, blanditiis consequuntur vitae possimus explicabo nobis vero eligendi illum? In ex,
-        nisi dolor repudiandae sequi architecto. Aliquam officia dicta, ab delectus eligendi ratione itaque!
-        Vero aliquam voluptates necessitatibus ex vel accusamus eveniet repudiandae. Exercitationem laudantium
-        eveniet in, pariatur voluptatem enim, doloremque, ipsum assumenda iusto consequatur error sed
-        veritatis voluptate quis iste provident vero et ab fugit tenetur?
-      </p>
+      <article class="about container big-section--padding" id="about">
+        <header class="about__header">
+          <h3 class="about__title title-line">About me</h3>
+        </header>
+        <section class="about__content">
+          <div class="about__image-wrapper">
+            <img
+              src="./images/me-optimized.jpeg"
+              class="about__image"
+              alt="portrait photo of Kryshenyk Dmytro"
+            />
+          </div>
+          <div class="about__article">
+            <p class="about__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi quas ab facere quaerat
+              similique repellendus sed itaque quam vel.
+            </p>
+            <p class="about__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi quas ab facere quaerat
+              similique repellendus sed itaque quam vel.
+            </p>
+            <p class="about__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi quas ab facere quaerat
+              similique repellendus sed itaque quam vel.
+            </p>
+            <p class="about__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi quas ab facere quaerat
+              similique repellendus sed itaque quam vel. Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Labore odio odit nihil esse eius illo adipisci eveniet, inventore sit ab fuga.
+              Voluptatibus esse perspiciatis voluptatem quam in veritatis molestias? Tempore. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit. A, quam! Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Quasi quibusdam officiis facilis libero, accusantium aut itaque quaerat ab
+              fugit aspernatur dolorem dignissimos ea atque fugiat sed quos consequatur ratione consequuntur!
+            </p>
+            <a class="about__cv-button button-transparent-primary">Dowload CV</a>
+          </div>
+        </section>
+        <section class="about__skills" id="skills">Skills will be there</section>
+      </article>
     </main>
     <script src="./js/index.js"></script>
   </body>

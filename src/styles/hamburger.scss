@@ -14,46 +14,46 @@ $hamburger-short-fn: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 .menu--toggle__burger:before,
 .menu--toggle__burger:after {
   position: absolute;
-  top: 29px;
-  right: 25px;
-  width: 32px;
-  height: 5px;
+  top: 1.8125rem;
+  right: 1.625rem;
+  width: 2rem;
+  height: 0.3125rem;
   background-color: #ffffff;
-  border-radius: 2px;
+  border-radius: 0.125rem;
   cursor: pointer;
   z-index: 100;
   transition: $hamburger-short-time $hamburger-long-fn;
 }
 
 .menu--toggle__trigger {
-  height: 32px;
+  height: 2rem;
   background: none;
 }
 
 .menu--toggle__burger {
   &:before {
     content: "";
-    top: 10px;
+    top: 0.625rem;
     right: 0;
   }
   &:after {
     content: "";
-    top: 20px;
+    top: 1.25rem;
     right: 0;
   }
 }
 
 .main-nav__list {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 50px;
-  height: 50px;
+  top: 1rem;
+  right: 1rem;
+  width: 3.125rem;
+  height: 3.125rem;
   margin: 0;
   padding: 0;
   background-color: rgba($brand-color-1, 0.9);
   border-radius: 100%;
-  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.2rem 0.025rem rgba(0, 0, 0, 0.2);
   z-index: 10;
   animation: closeHumburgerList $hamburger-short-time both;
 }
@@ -68,13 +68,13 @@ $hamburger-short-fn: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   display: none;
   opacity: 0;
   right: 0;
-  top: 40px;
+  top: 2.5rem;
   z-index: 10;
 }
 
 #menu--toggle:checked + .menu--toggle__trigger {
   & + .menu--toggle__burger {
-    top: 39px;
+    top: 2.4375rem;
     transform: rotate(405deg);
     transition: transform $hamburger-short-time $hamburger-short-fn;
 

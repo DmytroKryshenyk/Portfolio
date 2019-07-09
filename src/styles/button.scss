@@ -1,8 +1,36 @@
-.button {
-  background: none;
-  color: #ffffff;
+.button-transparent {
+  display: block;
   font: 300 1.2rem $openSans;
   padding: 0.7rem 1.3rem;
-  border: 1px solid #ffffff;
   text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+  transition: border 0.2s linear, background 0.2s linear;
 }
+ 
+
+.button-transparent-white {
+  @extend .button-transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+
+  &:hover {
+    border: 1px solid $brand-color-2;
+    background: $brand-color-2;
+  }
+} 
+
+.button-transparent-primary {
+  @extend .button-transparent;
+  color: $brand-color-2;
+  border: 1px solid $brand-color-2;
+
+  &:hover {
+    border: 1px solid $brand-color-2;
+    background: $brand-color-2;
+    color: #ffffff;
+  }
+}
+
