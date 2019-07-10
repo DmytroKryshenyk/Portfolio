@@ -5,7 +5,6 @@ export default class MainNav {
   }
 
   changeStylesIfScrolling() {
-    console.log("Здвинулись на:", window.pageYOffset);
     if (pageYOffset > 10) {
       this.element.classList.add("main-nav--scrolled");
     } else {
