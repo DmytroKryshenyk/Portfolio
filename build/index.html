@@ -98,7 +98,7 @@
     <main class="main">
       <article class="about container big-section--padding" id="about">
         <header class="about__header">
-          <h3 class="about__title title-line">About me</h3>
+          <h3 class="about__title section__title title-line">About me</h3>
         </header>
         <section class="about__content">
           <div class="about__image-wrapper">
@@ -130,7 +130,12 @@
               adipisicing elit. Quasi quibusdam officiis facilis libero, accusantium aut itaque quaerat ab
               fugit aspernatur dolorem dignissimos ea atque fugiat sed quos consequatur ratione consequuntur!
             </p>
-            <a class="about__cv-button button-transparent-primary">Dowload CV</a>
+            <a
+              class="about__cv-button button-transparent-primary"
+              title="link for download my CV"
+              target="_blank"
+              >Dowload CV</a
+            >
           </div>
         </section>
         <section class="about__skills" id="skills">
@@ -197,107 +202,197 @@
           <div class="skills__techniques">
             <h4 class="skills__title">Patterns and Techniques:</h4>
             <ul class="skills__list">
-              <li class="skills__item">Responsive, Adaptive and Mobile First Design</li>
-              <li class="skills__item">Object Oriented Programming (OOP)</li>
-              <li class="skills__item">Modular programming</li>
-              <li class="skills__item">MVC</li>
-              <li class="skills__item">Pixel Perfect</li>
-              <li class="skills__item">BEM</li>
-              <li class="skills__item">Ajax</li>
-              <li class="skills__item">Fetch API</li>
-              <li class="skills__item">SEO</li>
-              <li class="skills__item">Agile</li>
+              <li class="skills__item skills__item--other">Object Oriented Programming (OOP)</li>
+              <li class="skills__item skills__item--other">Modular programming</li>
+              <li class="skills__item skills__item--other">MVC</li>
+              <li class="skills__item skills__item--other">Ajax</li>
+              <li class="skills__item skills__item--other">Fetch API</li>
+              <li class="skills__item skills__item--other">npm</li>
+              <li class="skills__item skills__item--other">Responsive, Adaptive and Mobile First Design</li>
+              <li class="skills__item skills__item--other">Pixel Perfect</li>
+              <li class="skills__item skills__item--other">BEM</li>
+              <li class="skills__item skills__item--other">SEO</li>
+              <li class="skills__item skills__item--other">Agile</li>
             </ul>
           </div>
           <div class="skills__tools">
             <h4 class="skills__title">Tools:</h4>
             <ul class="skills__list">
-              <li class="skills__item">Photoshop</li>
-              <li class="skills__item">Zeplin</li>
-              <li class="skills__item">Visual Studio Code</li>
+              <li class="skills__item skills__item--other">Photoshop</li>
+              <li class="skills__item skills__item--other">Zeplin</li>
+              <li class="skills__item skills__item--other">Visual Studio Code</li>
             </ul>
           </div>
         </section>
       </article>
+
+      <article class="future big-section--padding">
+        <div class="future__content container">
+          <header class="future__header">
+            <h3 class="future__title section__title title-line">Learning path</h3>
+          </header>
+          <div class="future__stages-wrapper">
+            <section class="future__stages">
+              <h5 class="future__stages-title">Currently</h5>
+              <ul class="future__list">
+                <li class="future__item">React</li>
+                <li class="future__item">English B1</li>
+              </ul>
+            </section>
+            <section class="future__stages">
+              <h5 class="future__stages-title">Nearest future</h5>
+              <ul class="future__list">
+                <li class="future__item">React</li>
+                <li class="future__item">Redux Saga</li>
+                <li class="future__item">Vue</li>
+                <li class="future__item">Integration Testing</li>
+                <li class="future__item">English B2</li>
+              </ul>
+            </section>
+            <section class="future__stages">
+              <h5 class="future__stages-title">Further future</h5>
+              <ul class="future__list">
+                <li class="future__item">Node.js</li>
+                <li class="future__item">TDD</li>
+                <li class="future__item">React Native</li>
+                <li class="future__item">English C1</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+
+      <article class="projects container big-section--padding">
+        <header class="projects__header">
+          <h3 class="projects__title section__title title-line">Github projects</h3>
+          <p class="projects__subtitle section__subtitle">
+            A few sandbox projects I created to improve my skills and test new solutions.
+          </p>
+        </header>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <a
+              href="https://github.com/DmytroKryshenyk"
+              class="projects__link"
+              title="link to github repository of this website"
+              target="_blank"
+            >
+              <div class="projects__img projects__img--portfolio"></div>
+              <h3 class="projects__name">Portfolio</h3>
+            </a>
+            <p class="projects__description">This website</p>
+            <p class="projects__technologies">HTML5, Sass, JS, BEM, ES6 modules, Webpack</p>
+          </li>
+          <li class="projects__item">
+            <a
+              href="https://github.com/DmytroKryshenyk"
+              class="projects__link"
+              title="link to ... "
+              target="_blank"
+            >
+              <div class="projects__img projects__img--portfolio"></div>
+              <h3 class="projects__name">Project name</h3>
+            </a>
+            <p class="projects__description">Project description. blabla bla tralala</p>
+            <p class="projects__technologies">HTML5, Sass, JS, BEM, ES6 modules, Webpack</p>
+          </li>
+          <li class="projects__item">
+            <a
+              href="https://github.com/DmytroKryshenyk"
+              class="projects__link"
+              title="link to ... "
+              target="_blank"
+            >
+              <div class="projects__img projects__img--portfolio"></div>
+              <h3 class="projects__name">Project name</h3>
+            </a>
+            <p class="projects__description">Project description. blabla bla tralala</p>
+            <p class="projects__technologies">HTML5, Sass, JS, BEM, ES6 modules, Webpack</p>
+          </li>
+          <li class="projects__item">
+            <a
+              href="https://github.com/DmytroKryshenyk"
+              class="projects__link"
+              title="link to ... "
+              target="_blank"
+            >
+              <div class="projects__img projects__img--portfolio"></div>
+              <h3 class="projects__name">Project name</h3>
+            </a>
+            <p class="projects__description">Project description. blabla bla tralala</p>
+            <p class="projects__technologies">HTML5, Sass, JS, BEM, ES6 modules, Webpack</p>
+          </li>
+          <li class="projects__item">
+            <a
+              href="https://github.com/DmytroKryshenyk"
+              class="projects__link"
+              title="link to ... "
+              target="_blank"
+            >
+              <div class="projects__img projects__img--portfolio"></div>
+              <h3 class="projects__name">Project name</h3>
+            </a>
+            <p class="projects__description">Project description. blabla bla tralala</p>
+            <p class="projects__technologies">HTML5, Sass, JS, BEM, ES6 modules, Webpack</p>
+          </li>
+        </ul>
+        <a
+          href="https://github.com/DmytroKryshenyk"
+          class="projects__primery-btn button-primary"
+          title="link to my Github profile"
+          target="_blank"
+          >Github profile</a
+        >
+      </article>
+
+      <footer class="footer">
+        <div class="footer__contacts contacts container">
+          <h3 class="contacts__title section__title title-line">Contacts</h3>
+          <ul class="contacts__list">
+            <li class="contacts__item">+38 099 321 90 05</li>
+            <li class="contacts__item">kryshenykdmytro@gmail.com</li>
+          </ul>
+
+          <ul class="footer__social social">
+            <li class="social__item">
+              <a
+                href="https://www.facebook.com/dmytro.kryshenyk"
+                class="social__link"
+                target="_blank"
+                title="link to facebook"
+              >
+                <i class="social__icon social__icon--facebook">Facebook</i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://github.com/DmytroKryshenyk"
+                class="social__link"
+                target="_blank"
+                title="link to github"
+              >
+                <i class="social__icon social__icon--github">Github</i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.linkedin.com/in/dmytro-kryshenyk"
+                class="social__link"
+                target="_blank"
+                title="link to linkedin"
+              >
+                <i class="social__icon social__icon--linkedin">Linkedin</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
 
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam aliquam facere est suscipit, molestias ea
-      sunt accusamus hic libero, amet, eaque officia. Aut cum magni provident, earum magnam neque quia aliquid
-      dolorum aperiam veritatis repellendus voluptatum ut suscipit expedita, eveniet amet voluptas commodi at
-      deserunt nesciunt veniam fugit harum sed sequi! Aspernatur provident explicabo, fugit autem labore ipsam
-      commodi earum quas dolor, nisi eveniet alias possimus nesciunt? Numquam illo consequatur quidem magnam
-      voluptatum repudiandae eius explicabo, veritatis doloribus aut laborum tempore dignissimos consequuntur,
-      corrupti qui maiores voluptas non facere libero totam. Alias, magnam. Asperiores quis deleniti delectus
-      tempore repudiandae ipsam impedit accusantium quos dolorum nam? Laborum iste corporis possimus odit odio
-      ipsa? Ducimus inventore facere officiis, totam, beatae reprehenderit, ad natus consequuntur accusantium
-      est suscipit temporibus explicabo nesciunt eaque rerum possimus cupiditate sequi quod atque quidem
-      incidunt autem quo quasi dolores? Eligendi labore voluptate nesciunt impedit atque facere eveniet.
-      Deserunt, consectetur! Dolorum, dolorem ex cupiditate enim ducimus saepe voluptas vitae nam commodi
-      soluta hic at, eos, aliquid culpa laborum. Beatae, provident numquam? Hic sequi nulla provident. Nostrum
-      vitae laudantium modi aliquid, qui voluptas, inventore quod enim ratione praesentium quam voluptate.
-      Dolore aliquam, incidunt ducimus fugiat odit amet dolor nesciunt ullam sit natus dolores doloremque
-      quasi laboriosam pariatur eum molestiae ipsa maxime ratione harum eligendi blanditiis voluptates maiores
-      cum. Autem repudiandae veritatis eos, blanditiis ipsum ullam beatae dignissimos, reiciendis, velit rerum
-      dolore quam in enim soluta. Exercitationem nulla natus quidem deleniti nesciunt animi impedit soluta
-      praesentium dicta quo numquam delectus reprehenderit harum molestias repellat quas necessitatibus
-      corrupti ratione architecto ad, sed eum! Voluptate blanditiis magnam porro nobis voluptatem nemo?
-      Provident harum officia ipsum unde nostrum tempore odit et quas porro ea ullam tenetur iure, explicabo
-      quasi! Repellendus repudiandae cum facilis natus explicabo fugit aspernatur, at dignissimos cupiditate.
-      Voluptatibus hic porro est unde, fugiat praesentium illo ipsum rem fugit incidunt vitae. Maxime dolorum
-      earum, porro commodi delectus quia tempore in ab dolores! Perspiciatis inventore debitis quis repellat
-      nulla, animi saepe ullam, ex nesciunt esse vel ea voluptatem quibusdam doloremque eveniet maiores eius
-      odio ab reiciendis praesentium? Quisquam iusto architecto tempore molestias exercitationem cum
-      laudantium dolores provident doloribus eos eveniet earum, voluptatem pariatur excepturi ipsum vitae
-      ipsam cumque quas quo ex ducimus! Nobis amet sequi, eos dignissimos sapiente, ducimus eius veniam
-      quibusdam exercitationem incidunt harum explicabo sed, blanditiis aspernatur at modi. Commodi, eum
-      cupiditate? Voluptas, blanditiis ipsum eius nostrum cumque laboriosam omnis eos vitae ipsa placeat?
-      Animi quam iure maiores architecto, quos vel doloribus sequi a consectetur molestias, earum cumque minus
-      eos aliquid tenetur sunt? Obcaecati dolorem magnam quo, sunt explicabo recusandae libero numquam fugit
-      ex, debitis quibusdam possimus? Beatae delectus nostrum eaque, repellendus dolorum dolore omnis iure
-      voluptatem nobis temporibus officiis animi, optio tenetur quaerat adipisci totam laborum repudiandae?
-      Tempora molestias ducimus minus cumque neque necessitatibus esse vitae quod. Molestias nostrum enim
-      laudantium facilis deleniti ratione assumenda sint illo similique accusantium laborum obcaecati,
-      consectetur quod tenetur cupiditate repellat. Ducimus quisquam autem quis, perferendis sapiente eum
-      nihil reprehenderit illo ratione, vero enim dolorem porro explicabo quas ea accusamus. Sunt inventore
-      consectetur alias possimus vitae explicabo fugiat quam odit nostrum ad, reprehenderit dicta quod eius
-      autem non delectus porro deserunt aut error iusto libero voluptatibus facilis. Accusantium quis, officia
-      numquam excepturi laboriosam sit ab mollitia veritatis aliquam omnis consequuntur sint natus tenetur
-      voluptatum esse non, aspernatur alias eaque soluta neque, eligendi laborum unde nihil. Molestias aperiam
-      quaerat tenetur doloribus eum ex voluptatem soluta dignissimos debitis non repellendus eveniet sequi vel
-      nisi ad minima vero veritatis velit fugiat repudiandae, praesentium molestiae? Consectetur culpa
-      officiis eligendi ut repudiandae voluptatibus nam soluta debitis dolorem modi eos, fuga quaerat
-      voluptatem dolor ab! Aliquid veniam unde ipsa eius dolores iusto quos provident iste consequuntur
-      pariatur culpa harum ullam minus voluptatibus, eos porro, atque ab reiciendis ducimus dolor repellendus
-      quae incidunt? Assumenda quam, cum sunt tempora quisquam commodi error praesentium ut amet, natus
-      mollitia delectus veritatis consequuntur eligendi explicabo voluptate saepe cumque officia labore minus
-      inventore dolorem. Soluta doloribus fugit accusamus libero sequi neque sit, odit sapiente assumenda quas
-      explicabo saepe quos aperiam corrupti distinctio repellendus illo ea, dolore possimus obcaecati ratione
-      nemo voluptas? Exercitationem, voluptatibus dolores dignissimos consectetur molestiae recusandae
-      officiis quidem esse minus quo dolorum maxime qui! Sit perferendis pariatur nostrum vitae porro. Sed
-      quasi harum ratione error placeat porro rerum quia repudiandae ea? Neque, tenetur natus illum officiis
-      non beatae reprehenderit id unde optio illo et minus modi culpa maxime. Nisi perferendis earum nihil
-      voluptate optio quia molestias repellat, minima eveniet? Eum enim exercitationem, corrupti vel optio
-      fugit saepe minus, distinctio voluptatibus eligendi, delectus eius consequuntur fugiat numquam? Sit
-      placeat rem esse obcaecati hic cum unde consequuntur reprehenderit, laborum quia nisi labore tenetur,
-      commodi, aperiam praesentium? Reiciendis, nemo aperiam sed laboriosam corrupti porro ea pariatur fugit
-      ipsa consequatur itaque error commodi, iure nostrum eligendi cum aspernatur minima rem ad. Dolore fugiat
-      accusamus esse cumque non harum doloribus, distinctio praesentium dignissimos cupiditate, vel totam?
-      Minus aliquid nam architecto doloribus aliquam deserunt corporis ex dignissimos ullam, cumque nemo rem
-      quod magni fugit corrupti similique autem quis, exercitationem laborum cum, itaque labore distinctio
-      obcaecati. Voluptates ipsam pariatur mollitia porro repellat et, minus sed. Cum architecto vel dolorem
-      sequi ab saepe quod, neque quas nihil facilis, eum porro, iusto delectus ipsum placeat doloremque atque!
-      Numquam exercitationem cumque magnam delectus labore dignissimos laboriosam iusto quidem blanditiis.
-      Modi harum quo accusantium? Voluptate incidunt unde, nam nisi eum voluptatum hic neque sunt ipsam, enim
-      modi dignissimos ad, nesciunt asperiores suscipit beatae natus repellendus iusto totam. Officia ab
-      optio, temporibus perferendis facere eum sint tempore nihil enim minus facilis eius odit ad. Corporis,
-      voluptatibus obcaecati enim itaque, quos vitae animi vero illum omnis perspiciatis voluptatum neque quas
-      reprehenderit tempore velit voluptates numquam alias ut ratione explicabo. Officia sequi, et facere
-      sapiente in pariatur voluptates voluptatem alias placeat atque minus eos tenetur ipsam provident aut
-      rerum. Adipisci fuga consequatur similique ipsum velit aut facilis corporis? Labore nesciunt velit
-      asperiores suscipit quas iste explicabo rem numquam delectus distinctio reprehenderit, consequatur
-      similique aliquam, assumenda, beatae perspiciatis laboriosam. Cupiditate.
-    </p>
     <script src="./js/index.js"></script>
   <script type="text/javascript" src="js/index.js"></script></body>
 </html>
+<!-- 
+<p class="future__subtitle section__subtitle">
+  A few sandbox projects I created to improve my skills and test new solutions.
+</p> -->

@@ -21,7 +21,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .about__title {
+  .section__title {
     font-size: 3rem;
   }
 
@@ -47,7 +47,36 @@
 
   .skills__techniques,
   .skills__tools {
-    flex-basis: 48%
+    flex-basis: 48%;
+  }
+
+  .future__stages-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .future__stages {
+    flex-basis: 49%;
+  }
+
+  .projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .projects__item {
+    flex: 1 0 30%;
+    margin-left: 1rem; 
+
+    &:nth-child(-n + 3) {
+      margin-top: 0;
+    }
+
+    &:nth-child(3n + 1) {
+      margin-left: 0;
+    }
   }
 }
 
@@ -105,6 +134,10 @@
 
   .about__article {
     flex: 2 1;
+  }
+
+  .future__stages {
+    flex-basis: 30%;
   }
 }
 

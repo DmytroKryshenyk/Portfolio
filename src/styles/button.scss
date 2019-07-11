@@ -1,16 +1,19 @@
-.button-transparent {
+.button {
   display: block;
   font: 300 1.2rem $openSans;
   padding: 0.7rem 1.3rem;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  background: none;
   cursor: pointer;
   transition: border 0.2s linear, background 0.2s linear;
 }
- 
 
+.button-transparent {
+  @extend .button;
+  background: none;
+}
+ 
 .button-transparent-white {
   @extend .button-transparent;
   color: #ffffff;
@@ -20,7 +23,7 @@
     border: 1px solid $brand-color-2;
     background: $brand-color-2;
   }
-} 
+}
 
 .button-transparent-primary {
   @extend .button-transparent;
@@ -34,3 +37,13 @@
   }
 }
 
+
+.button-primary {
+  @extend .button;
+  background: $brand-color-3;
+  color: #ffffff;
+
+  &:hover {
+    background: darken($brand-color-3, 10%);  
+  }
+}
