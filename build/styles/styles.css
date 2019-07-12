@@ -515,6 +515,43 @@ template {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
 
+.down-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+          transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: downArrowAnimation 2s ease-in-out infinite;
+          animation: downArrowAnimation 2s ease-in-out infinite; }
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes downArrowAnimation {
+  0% {
+    -webkit-transform: translate(-50%, -1rem) rotate(45deg);
+            transform: translate(-50%, -1rem) rotate(45deg);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(-50%, 0.5rem) rotate(45deg);
+            transform: translate(-50%, 0.5rem) rotate(45deg);
+    opacity: 0; } }
+@keyframes downArrowAnimation {
+  0% {
+    -webkit-transform: translate(-50%, -1rem) rotate(45deg);
+            transform: translate(-50%, -1rem) rotate(45deg);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(-50%, 0.5rem) rotate(45deg);
+            transform: translate(-50%, 0.5rem) rotate(45deg);
+    opacity: 0; } }
+
 .about__content {
   margin-bottom: 3.125rem; }
 
@@ -531,9 +568,9 @@ template {
   margin-bottom: 1.25rem; }
 
 .about__cv-button {
-  max-width: 21rem;
   display: block;
-  margin: auto; }
+  margin: auto;
+  max-width: 21rem; }
 
 .skills__title {
   font: 500 1.2rem "Roboto", sans-serif;
@@ -562,9 +599,9 @@ template {
 .skills__item--other {
   display: inline-block;
   background-color: #ededed;
-  padding: 5px 20px;
-  margin: 3px;
-  border-radius: 15px; }
+  padding: 0.3125rem 1.25rem;
+  margin: 0.2rem;
+  border-radius: 1rem; }
 
 .skills__name {
   font-size: 1.3rem;
@@ -607,14 +644,14 @@ template {
     width: 70%; }
 
 .future {
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  color: #ffffff;
   background: #e8ac2f;
   background: linear-gradient(-45deg, #e8ac2f, #e74643);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
-  animation: Gradient 8s ease infinite;
-  -webkit-transform: skewY(-3deg);
-          transform: skewY(-3deg);
-  color: #ffffff; }
+  animation: Gradient 8s ease infinite; }
 
 .future__content {
   -webkit-transform: skewY(3deg);
@@ -699,8 +736,12 @@ template {
   max-width: 14rem; }
 
 .footer {
+  position: relative;
   padding-top: 2rem;
   background: #212121; }
+
+.footer__contacts {
+  margin-bottom: 1.5rem; }
 
 .contacts__title {
   color: #ffffff; }
@@ -708,13 +749,36 @@ template {
 .contacts__list {
   padding-left: 0;
   list-style-type: none;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1.2rem; }
 
 .contacts__item {
-  color: #ffffff; }
+  color: #ffffff;
+  font: 1.5rem "OpenSansCondensed", sans-serif; }
+
+.contacts__item--email {
+  color: #64b8a5; }
 
 .footer__social {
   text-align: center; }
+
+.footer__copyright {
+  color: #ffffff;
+  font: 1.2rem "OpenSansCondensed", sans-serif;
+  text-align: center;
+  padding: 1.75rem; }
+
+.to-top-link {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  display: inline-block;
+  width: 3.125rem;
+  height: 3.125rem;
+  background-image: url("../images/to-top-arrow.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 @-webkit-keyframes startSkillsProgresBar {
   0% {

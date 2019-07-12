@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -78,21 +78,22 @@
         <p class="header__title">Hi, I'm Front-end Developer</p>
         <h4 class="header__subtitle">Kryshenyk Dmytro</h4>
         <a
-          href="#portfolio"
+          href="#projects"
           class="header__projects-btn button-transparent-white"
-          alt="link button to projects"
+          title="link to projects"
           >Projects
         </a>
+        <div class="down-arrow"></div>
       </section>
 
-      <section class="header_workspace workspace__layers js-workspace__layers">
+      <div class="header_workspace workspace__layers js-workspace__layers">
         <div class="workspace__layer workspace__layer--0" data-id="workspace__layer0" data-range="0"></div>
         <div class="workspace__layer workspace__layer--1" data-id="workspace__layer1" data-range="20"></div>
         <div class="workspace__layer workspace__layer--2" data-id="workspace__layer2" data-range="30"></div>
         <div class="workspace__layer workspace__layer--3" data-id="workspace__layer3" data-range="70"></div>
         <div class="workspace__layer workspace__layer--4" data-id="workspace__layer4" data-range="90"></div>
         <div class="workspace__layer workspace__layer--5" data-id="workspace__layer5" data-range="150"></div>
-      </section>
+      </div>
     </header>
 
     <main class="main">
@@ -130,7 +131,7 @@
               adipisicing elit. Quasi quibusdam officiis facilis libero, accusantium aut itaque quaerat ab
               fugit aspernatur dolorem dignissimos ea atque fugiat sed quos consequatur ratione consequuntur!
             </p>
-            <a
+            <a href="#"
               class="about__cv-button button-transparent-primary"
               title="link for download my CV"
               target="_blank"
@@ -202,7 +203,7 @@
           <div class="skills__techniques">
             <h4 class="skills__title">Patterns and Techniques:</h4>
             <ul class="skills__list">
-              <li class="skills__item skills__item--other">Object Oriented Programming (OOP)</li>
+              <li class="skills__item skills__item--other">OOP (Object Oriented Programming)</li>
               <li class="skills__item skills__item--other">Modular programming</li>
               <li class="skills__item skills__item--other">MVC</li>
               <li class="skills__item skills__item--other">Ajax</li>
@@ -262,7 +263,7 @@
         </div>
       </article>
 
-      <article class="projects container big-section--padding">
+      <article class="projects container big-section--padding" id="projects">
         <header class="projects__header">
           <h3 class="projects__title section__title title-line">Github projects</h3>
           <p class="projects__subtitle section__subtitle">
@@ -346,11 +347,11 @@
       </article>
 
       <footer class="footer">
-        <div class="footer__contacts contacts container">
+        <div class="footer__contacts contacts container" id="contacts">
           <h3 class="contacts__title section__title title-line">Contacts</h3>
           <ul class="contacts__list">
-            <li class="contacts__item">+38 099 321 90 05</li>
-            <li class="contacts__item">kryshenykdmytro@gmail.com</li>
+            <li class="contacts__item contacts__item--number">+38 099 321 90 05</li>
+            <li class="contacts__item contacts__item--email">kryshenykdmytro@gmail.com</li>
           </ul>
 
           <ul class="footer__social social">
@@ -386,13 +387,11 @@
             </li>
           </ul>
         </div>
+        <p class="footer__copyright container">© 2019 | Dmytro Kryshenyk</p>
+        <a href="#" class="footer__to-top-link to-top-link"></a>
       </footer>
     </main>
 
     <script src="./js/index.js"></script>
   </body>
 </html>
-<!-- 
-<p class="future__subtitle section__subtitle">
-  A few sandbox projects I created to improve my skills and test new solutions.
-</p> -->

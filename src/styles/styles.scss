@@ -142,6 +142,25 @@
   transform: translateX(-50%);
 }
 
+.down-arrow {
+	position: absolute;
+	left: 50%;
+	bottom: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  transform: translate(-50%, 0%) rotate(45deg);
+	animation: downArrowAnimation 2s ease-in-out infinite;
+}
+
+/*animated scroll arrow animation*/
+@keyframes downArrowAnimation {
+  0%   { transform:translate(-50%,-1rem) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(-50%, 0.5rem) rotate(45deg); opacity: 0; }
+}
+
 .about__content {
   margin-bottom: 3.125rem;
 }
@@ -162,9 +181,9 @@
 }
 
 .about__cv-button {
-  max-width: 21rem;
   display: block;
   margin: auto;
+  max-width: 21rem;
 }
 
 .skills__title {
@@ -199,9 +218,9 @@
 .skills__item--other {
   display: inline-block;
   background-color: #ededed;
-  padding: 5px 20px;
-  margin: 3px;
-  border-radius: 15px;
+  padding: 0.3125rem 1.25rem;
+  margin: 0.2rem;
+  border-radius: 1rem;
 }
 
 .skills__name {
@@ -266,30 +285,21 @@
 }
 
 .future {
+  transform: skewY(-3deg);
+  color: #ffffff;
   background: $brand-color-1; //for old browsers
   background: linear-gradient(-45deg, $brand-color-1, $brand-color-2);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 8s ease infinite;
-
-  // background: $brand-color-1;
-  transform: skewY(-3deg);
-  color: #ffffff;
 }
 
 .future__content {
   transform: skewY(3deg);
 }
 
-.future__stages-wrapper {
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
-}
-
 .future__stages {
-  // flex-basis: 50%;
   margin-bottom: 0.8rem;
 }
 
@@ -341,14 +351,14 @@
   text-decoration: none;
   position: relative;
   color: #000000;
-  transition: color 0.2s linear; 
+  transition: color 0.2s linear;
 
   &:hover {
     color: $brand-color-2;
   }
 
-  &:hover .projects__img { 
-    filter: brightness(100%); 
+  &:hover .projects__img {
+    filter: brightness(100%);
     -webkit-filter: brightness(100%);
   }
 }
@@ -357,7 +367,7 @@
   height: 9rem;
   margin-bottom: 0.5rem;
   filter: brightness(70%);
-  transition: filter 0.2s linear; 
+  transition: filter 0.2s linear;
 
   &--portfolio {
     background: url(../images/projects-screenshots/portfolio.png) no-repeat;
@@ -386,35 +396,59 @@
 }
 
 .footer {
+  position: relative;
   padding-top: 2rem;
   background: $darkest-grey;
 }
 
+.footer__contacts {
+  margin-bottom: 1.5rem;
+}
+
 .contacts__title {
-  color: #ffffff;  
+  color: #ffffff;
 }
 
 .contacts__list {
   padding-left: 0;
   list-style-type: none;
   text-align: center;
-
+  margin-bottom: 1.2rem;
 }
 
 .contacts__item {
   color: #ffffff;
+  font: 1.5rem $openSans;
+}
+
+.contacts__item--email {
+  color: $brand-color-3;
 }
 
 .footer__social {
   text-align: center;
 }
-// ===
-// ===
-// ===
-// ===
-// ===
-// ===
-// ===
+ 
+.footer__copyright {
+  color: #ffffff;
+  font: 1.2rem $openSans;
+  text-align: center;
+  padding: 1.75rem;
+}
+
+.to-top-link {
+  position: absolute;
+  right: 2rem; 
+  bottom: 2rem;
+  display: inline-block; 
+  width: 3.125rem;
+  height: 3.125rem;
+  background-image: url('../images/to-top-arrow.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 @keyframes startSkillsProgresBar {
   0% {
