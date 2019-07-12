@@ -1,0 +1,26 @@
+@media (min-width: $breakpoint-small) {
+  .future__stages-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .future__stages {
+    flex-basis: 49%;
+
+    &:nth-child(3) {
+      flex-grow: 1;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .future__stages {
+    flex-basis: 30%;
+    margin-bottom: 0;
+
+    &:nth-child(3) {
+      flex-grow: 0;
+    }
+  }
+}

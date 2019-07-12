@@ -1,0 +1,65 @@
+.header__content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  z-index: 9;
+}
+
+.header__title,
+.header__subtitle {
+  position: relative;
+  top: -3rem;
+  font-family: $titles-font;
+}
+
+.header__title {
+  margin-bottom: 0.5rem;
+  font-size: 2.1rem;
+}
+
+.header__subtitle {
+  font-weight: normal;
+  font-size: 1.9rem;
+}
+
+.header__projects-btn {
+  position: absolute;
+  bottom: 3.125rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.down-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  transform: translate(-50%, 0%) rotate(45deg);
+  animation: downArrowAnimation 2s ease-in-out infinite;
+}
+
+/*animated scroll arrow animation*/
+@keyframes downArrowAnimation {
+  0% {
+    transform: translate(-50%, -1rem) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 0.5rem) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@import "./header-media.scss";

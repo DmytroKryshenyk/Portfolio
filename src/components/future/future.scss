@@ -1,0 +1,58 @@
+.future {
+  transform: skewY(-3deg);
+  color: #ffffff;
+  background: $brand-color-1; //for old browsers
+  background: linear-gradient(-45deg, $brand-color-1, $brand-color-2);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 8s ease infinite;
+}
+
+.future__content {
+  transform: skewY(3deg);
+}
+
+.future__stages {
+  margin-bottom: 0.8rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.future__stages-title {
+  font: 700 1rem $titles-font;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.future__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.future__item {
+  list-style-type: none;
+  font: 1.2rem $text-font;
+  margin: 0.2rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #ffffff;
+  text-align: center;
+  flex: 1 auto;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@import "../future/future-media.scss";

@@ -1,0 +1,67 @@
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 20;
+  padding-top: $main-nav-padding-s;
+}
+
+.main-nav__logo {
+  display: inline-block;
+  font-size: 0;
+}
+
+.logo__link {
+  display: block;
+}
+
+.logo__img {
+  display: block;
+  height: 3.125rem;
+}
+
+.main-nav__item {
+  list-style-type: none;
+}
+
+.main-nav__link {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font: 2rem $text-font;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: $brand-color-2;
+  }
+}
+
+@keyframes mainNavShriks {
+  0% {
+    padding-top: $main-nav-padding-s;
+    padding-bottom: $main-nav-padding-s;
+  }
+
+  100% {
+    padding-top: $main-nav-padding-xs;
+    padding-bottom: 0;
+    background: $darkest-grey;
+  }
+}
+
+@keyframes mainNavExpads {
+  0% {
+    padding-top: $main-nav-padding-xs;
+    padding-bottom: 0;
+    background: $darkest-grey;
+  }
+
+  100% {
+    padding-top: $main-nav-padding-s;
+    padding-bottom: $main-nav-padding-s;
+  }
+}
+
+@import "./main-nav-media.scss";

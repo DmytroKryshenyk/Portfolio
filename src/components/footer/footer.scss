@@ -1,0 +1,40 @@
+.footer {
+  position: relative;
+  padding-top: 2rem;
+  background: $darkest-grey;
+}
+
+.footer__contacts {
+  margin-bottom: 1.5rem;
+}
+
+.contacts__title {
+  color: #ffffff;
+}
+
+.contacts__list {
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.contacts__item {
+  color: #ffffff;
+  font: 1.5rem $text-font;
+}
+
+.contacts__item--email {
+  color: $brand-color-3;
+}
+
+.footer__social {
+  text-align: center;
+}
+
+.footer__copyright {
+  color: #ffffff;
+  font: 1.2rem $text-font;
+  text-align: center;
+  padding: 1.75rem;
+}

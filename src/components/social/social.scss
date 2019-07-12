@@ -1,6 +1,18 @@
 $social-icon-width: 2rem;
 $social-icon-height: 2rem;
 
+.social {
+  padding: 0;
+}
+
+.social__item {
+  display: inline-block;
+}
+
+.social__link {
+  display: block;
+}
+
 .social__icon {
   display: block;
   border: none;
@@ -10,18 +22,18 @@ $social-icon-height: 2rem;
   height: $social-icon-height;
 
   &--facebook {
-    background: url("../images/icons/social_icons.svg");
+    background: url("../images/social_icons.svg");
     background-size: auto 100%;
   }
 
   &--github {
-    background: url("../images/icons/social_icons.svg");
+    background: url("../images/social_icons.svg");
     background-size: auto 100%;
     background-position: calc(#{$social-icon-width} + #{$social-icon-width}) 0;
   }
- 
+
   &--linkedin {
-    background: url("../images/icons/social_icons.svg");
+    background: url("../images/social_icons.svg");
     background-size: auto 100%;
     background-position: $social-icon-width 0;
   }

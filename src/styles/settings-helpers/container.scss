@@ -1,0 +1,8 @@
+.container {
+  width: 100%;
+  min-width: $container-size-min;
+  max-width: $container-size-max;
+  margin: auto;
+  padding-right: $general-padding-s;
+  padding-left: $general-padding-s;
+}

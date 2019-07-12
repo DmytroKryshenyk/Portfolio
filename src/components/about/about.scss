@@ -1,0 +1,26 @@
+.about__content {
+  margin-bottom: 3.125rem;
+}
+
+.about__image-wrapper {
+  margin-bottom: 1.25rem;
+}
+
+.about__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.about__description {
+  font: 300 1.3rem $text-font;
+  margin-bottom: 1.25rem;
+}
+
+.about__cv-button {
+  display: block;
+  margin: auto;
+  max-width: 21rem;
+}
+
+@import "./about-media.scss";

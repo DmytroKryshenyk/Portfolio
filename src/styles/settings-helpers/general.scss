@@ -1,0 +1,32 @@
+.big-section--padding {
+  padding-top: $general-padding-m;
+  padding-bottom: $general-padding-l;
+}
+
+.section__title {
+  font: 500 2rem $titles-font;
+  text-align: center;
+}
+
+.section__subtitle {
+  font: 1rem $titles-font;
+  text-align: center;
+}
+
+.title-line {
+  position: relative;
+  padding-bottom: 2.625rem;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 0.125rem;
+    background-color: $brand-color-3;
+  }
+}
+
+@import "./general-media.scss";

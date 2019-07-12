@@ -1,0 +1,120 @@
+.skills {
+  margin-bottom: 1rem;
+}
+
+.skills__title {
+  font: 500 1.2rem $titles-font;
+  margin-bottom: 0.5rem;
+}
+
+.skills__list {
+  padding: 0;
+}
+
+.skills__list--progress {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills__item {
+  font-weight: 300;
+  font-family: $text-font;
+  font-size: 1.1rem;
+  list-style-type: none;
+  margin-bottom: 0.1rem;
+}
+
+.skills__item--progress {
+  flex-basis: 48%;
+  margin-bottom: 0.3rem;
+
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+.skills__item--other {
+  display: inline-block;
+  background-color: #ededed;
+  padding: 0.3125rem 1.25rem;
+  margin: 0.2rem;
+  border-radius: 1rem;
+}
+
+.skills__name {
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.skills__progress-bar {
+  background: $mid-grey;
+  border-radius: 0.3125rem;
+  height: 0.3125rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.skills__list--visible .skills__progres-bar--value {
+  animation: startSkillsProgresBar 1.5s ease-in-out both;
+}
+
+.skills__progres-bar--value {
+  position: absolute;
+  left: 0;
+  background: $brand-color-2;
+  height: 0.3125rem;
+  border-radius: 0.3125rem;
+
+  &.html-bar-value {
+    width: 90%;
+  }
+
+  &.bootstrap-bar-value {
+    width: 50%;
+  }
+
+  &.css-bar-value {
+    width: 90%;
+  }
+
+  &.sass-bar-value {
+    width: 70%;
+  }
+
+  &.js-bar-value {
+    width: 50%;
+  }
+
+  &.react-bar-value {
+    width: 15%;
+  }
+
+  &.webpack-bar-value {
+    width: 80%;
+  }
+
+  &.jest-bar-value {
+    width: 15%;
+  }
+
+  &.git-bar-value {
+    width: 70%;
+  }
+}
+
+.skills__techniques {
+  margin-bottom: 1rem;
+}
+
+@keyframes startSkillsProgresBar {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@import "../skills/skills-media.scss";

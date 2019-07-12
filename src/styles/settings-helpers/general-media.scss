@@ -1,0 +1,10 @@
+@media (min-width: $breakpoint-small) {
+  .big-section--padding {
+    padding-top: $general-padding-l;
+    padding-bottom: $general-padding-xl;
+  }
+
+  .section__title {
+    font-size: 3rem;
+  }
+}

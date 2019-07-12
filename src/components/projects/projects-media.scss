@@ -1,0 +1,20 @@
+@media (min-width: $breakpoint-small) {
+  .projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .projects__item {
+    flex: 1 0 30%;
+    margin-left: 1rem;
+
+    &:nth-child(-n + 3) {
+      margin-top: 0;
+    }
+
+    &:nth-child(3n + 1) {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@media (min-width: $breakpoint-small) {
+  .skills {
+    flex-basis: 100%;
+  }
+
+  .skills__techniques,
+  .skills__tools {
+    flex-basis: 48%;
+  }
+}
