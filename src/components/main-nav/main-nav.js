@@ -19,7 +19,7 @@ export default class MainNav {
     event.preventDefault();
 
     const href = target.getAttribute("href");
-    const el = document.querySelector(href);  
+    const el = document.querySelector(href);
     const top = el.getBoundingClientRect().top + window.pageYOffset - this.element.offsetHeight;
 
     window.scrollTo({ top: top, behavior: "smooth" });

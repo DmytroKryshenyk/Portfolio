@@ -41,26 +41,44 @@
   margin-bottom: 0.5rem;
   filter: brightness(70%);
   transition: filter 0.2s linear;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   &--portfolio {
-    background: url(../images/portfolio.png) no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/portfolio.png);
+  }
+
+  &--react-bookmark {
+    background-image: url(../images/react-boomark-link-manager.jpg); 
+  } 
+
+  &--lorem {
+    background-image: url(../images/lorem-ipsum-img.jpg);
   }
 }
 
 .projects__name {
-  font: 700 1.1rem $titles-font;
+  font: 700 1.1rem $titles-font; 
+}
+
+.projects__description,
+.projects__technologies {
+  font: 500 0.7rem $titles-font;
 }
 
 .projects__description {
-  font: 500 0.8rem $titles-font;
-  color: $dark-grey;
+  color: $dark-grey; 
 }
 
 .projects__technologies {
-  font: 500 0.8rem $titles-font;
   color: $brand-color-3;
+}
+
+.projects__source-link {
+  font: 0.7rem $titles-font;
+  color: $mid-grey;
+  text-decoration: none;
 }
 
 .projects__primery-btn {
@@ -68,5 +86,4 @@
   max-width: 14rem;
 }
 
-
-@import '../projects/projects-media.scss'
+@import "../projects/projects-media.scss";
