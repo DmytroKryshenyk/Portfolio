@@ -1032,10 +1032,14 @@ template {
   background-repeat: no-repeat; }
   .projects__img--portfolio {
     background-image: url(../images/portfolio.png); }
+  .projects__img--yotalabs {
+    background-image: url(../images/yota-labs.jpg); }
   .projects__img--react-bookmark {
     background-image: url(../images/react-boomark-link-manager.jpg); }
-  .projects__img--lorem {
-    background-image: url(../images/lorem-ipsum-img.jpg); }
+  .projects__img--stopwatch {
+    background-image: url(../images/stopwatch.jpg); }
+  .projects__img--bookmark-mvc {
+    background-image: url(../images/mvc-boomark-link-manager.jpg); }
 
 .projects__name {
   font: 700 1.1rem "Roboto", sans-serif; }

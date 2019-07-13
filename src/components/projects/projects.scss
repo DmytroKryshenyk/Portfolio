@@ -49,13 +49,23 @@
     background-image: url(../images/portfolio.png);
   }
 
+  
+  &--yotalabs {
+    background-image: url(../images/yota-labs.jpg);
+  }
+
   &--react-bookmark {
     background-image: url(../images/react-boomark-link-manager.jpg); 
   } 
 
-  &--lorem {
-    background-image: url(../images/lorem-ipsum-img.jpg);
+  &--stopwatch {
+    background-image: url(../images/stopwatch.jpg);
   }
+
+  &--bookmark-mvc {
+    background-image: url(../images/mvc-boomark-link-manager.jpg);
+  }
+
 }
 
 .projects__name {
