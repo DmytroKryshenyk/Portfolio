@@ -1040,6 +1040,8 @@ template {
     background-image: url(../images/stopwatch.jpg); }
   .projects__img--bookmark-mvc {
     background-image: url(../images/mvc-boomark-link-manager.jpg); }
+  .projects__img--webpack {
+    background-image: url(../images/webpack-starter-kit.jpg); }
 
 .projects__name {
   font: 700 1.1rem "Roboto", sans-serif; }

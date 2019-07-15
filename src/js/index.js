@@ -4,7 +4,7 @@ import WorkspaceLayers from "../components/header-workspace/index.js";
 import MainNav from "../components/main-nav/main-nav.js";
 import Header from "../components/header/header.js";
 import SkillsProgresBar from "../components/skills/skills-progress-bar.js";
-import ToTopLink from "../components/to-top/to-top.js"; 
+import ToTopLink from "../components/to-top/to-top.js";
 
 const headerWorkspace = new WorkspaceLayers(document.querySelector(".js-workspace__layers"));
 headerWorkspace.init();
