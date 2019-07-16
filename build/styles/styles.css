@@ -1099,7 +1099,8 @@ template {
   color: #ffffff;
   font: 1.5rem "OpenSansCondensed", sans-serif; }
   .contacts__item--number {
-    color: #ffffff; }
+    color: #ffffff;
+    text-decoration: none; }
   .contacts__item--email {
     color: #64b8a5; }
 
