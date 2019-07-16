@@ -1098,9 +1098,10 @@ template {
 .contacts__item {
   color: #ffffff;
   font: 1.5rem "OpenSansCondensed", sans-serif; }
-
-.contacts__item--email {
-  color: #64b8a5; }
+  .contacts__item--number {
+    color: #ffffff; }
+  .contacts__item--email {
+    color: #64b8a5; }
 
 .footer__social {
   text-align: center; }

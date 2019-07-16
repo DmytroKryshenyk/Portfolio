@@ -22,10 +22,14 @@
 .contacts__item {
   color: #ffffff;
   font: 1.5rem $text-font;
-}
 
-.contacts__item--email {
-  color: $brand-color-3;
+  &--number {
+    color: #ffffff;
+  }
+
+  &--email {
+    color: $brand-color-3;
+  }
 }
 
 .footer__social {
