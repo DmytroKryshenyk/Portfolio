@@ -1012,7 +1012,8 @@ template {
   text-decoration: none;
   position: relative;
   color: #000000;
-  transition: color 0.2s linear; }
+  transition: color 0.2s linear;
+  margin-bottom: 0.4rem; }
   .projects__link:hover {
     color: #e74643; }
   .projects__link:hover .projects__img {
@@ -1051,10 +1052,12 @@ template {
   font: 500 0.7rem "Roboto", sans-serif; }
 
 .projects__description {
-  color: #444444; }
+  color: #444444;
+  margin-bottom: 0.4rem; }
 
 .projects__technologies {
-  color: #64b8a5; }
+  color: #64b8a5;
+  margin-bottom: 0.1rem; }
 
 .projects__source-link {
   font: 0.7rem "Roboto", sans-serif;
