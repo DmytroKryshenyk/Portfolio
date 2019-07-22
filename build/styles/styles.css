@@ -1043,6 +1043,8 @@ template {
     background-image: url(../images/mvc-boomark-link-manager.jpg); }
   .projects__img--webpack {
     background-image: url(../images/webpack-starter-kit.jpg); }
+  .projects__img--waether-app {
+    background-image: url(../images/local-weather.jpg); }
 
 .projects__name {
   font: 700 1.1rem "Roboto", sans-serif; }
