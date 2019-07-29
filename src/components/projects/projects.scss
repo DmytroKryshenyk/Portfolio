@@ -59,6 +59,10 @@
     background-image: url(../images/react-boomark-link-manager.jpg); 
   } 
 
+  &--todo {
+    background-image: url(../images/to-do-list-vue-app.jpg); 
+  } 
+
   &--stopwatch {
     background-image: url(../images/stopwatch.jpg);
   }
@@ -75,6 +79,9 @@
     background-image: url(../images/local-weather.jpg);
   }
 
+  &--lian {
+    background-image: url(../images/lian-creative-agency.jpg);
+  }
 }
 
 .projects__name {

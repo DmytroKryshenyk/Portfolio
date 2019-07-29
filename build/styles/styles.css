@@ -891,6 +891,8 @@ template {
     width: 50%; }
   .skills__progres-bar--value.react-bar-value {
     width: 15%; }
+  .skills__progres-bar--value.vue-bar-value {
+    width: 15%; }
   .skills__progres-bar--value.webpack-bar-value {
     width: 80%; }
   .skills__progres-bar--value.jest-bar-value {
@@ -1037,6 +1039,8 @@ template {
     background-image: url(../images/yota-labs.jpg); }
   .projects__img--react-bookmark {
     background-image: url(../images/react-boomark-link-manager.jpg); }
+  .projects__img--todo {
+    background-image: url(../images/to-do-list-vue-app.jpg); }
   .projects__img--stopwatch {
     background-image: url(../images/stopwatch.jpg); }
   .projects__img--bookmark-mvc {
@@ -1045,6 +1049,8 @@ template {
     background-image: url(../images/webpack-starter-kit.jpg); }
   .projects__img--waether-app {
     background-image: url(../images/local-weather.jpg); }
+  .projects__img--lian {
+    background-image: url(../images/lian-creative-agency.jpg); }
 
 .projects__name {
   font: 700 1.1rem "Roboto", sans-serif; }
