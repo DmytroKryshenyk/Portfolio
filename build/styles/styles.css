@@ -890,9 +890,9 @@ template {
   .skills__progres-bar--value.js-bar-value {
     width: 50%; }
   .skills__progres-bar--value.react-bar-value {
-    width: 15%; }
+    width: 10%; }
   .skills__progres-bar--value.vue-bar-value {
-    width: 15%; }
+    width: 40%; }
   .skills__progres-bar--value.webpack-bar-value {
     width: 80%; }
   .skills__progres-bar--value.jest-bar-value {
